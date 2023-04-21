@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos multimedia</title>
+    <!-- iconos de Font Awesome 4 Icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <h1>IMAGENES</h1>
+    <!-- Acceder a una imagen desde un url -->
+    <!-- alt permite darle un nombre a la imagen, permitiendo la accesibilidad en los navegadores -->
+    <h2>Esta es mi primer imagen desde una url</h2>
+    <img src="https://www.dogalize.com/wp-content/uploads/2017/06/La-sverminazione-e-la-pulizia-del-cucciolo-del-cane-2-800x400-800x400.jpg" alt="perros" >
+    <!-- Acceder a una  imagen desde un archivo local -->
+    <h2>Esta es mi primer imagen desde un archivo</h2>
+    <img src="img/gatitos.jpg" alt="gatos">
+    <!-- Modificar el tamaño de una imagen-- width para modificar el tamaño horizontal -- height para modificar el tamaño vertical -->
+    <h2>Esta es mi primer imagen modificada</h2>
+    <img src="img/gatitos.jpg" alt="gatos" width="400" height="250">
+    <hr>
+    <!-- Agregar iconos -->
+    <h1>ICONOS</h1>
+    <i class="fa fa-cloud">nube</i>
+    <br>
+    <i class="fa fa-heart">corazon</i>
+    <br>
+    <i class="fa fa-car">carro</i>
+    <hr>
+    <h1>FIGURAS</h1>
+    <!-- Agregar imagen con una descripcion -->
+    <figure>
+        <img src="img/gatitos.jpg" alt="gatos" width="400" height="250">
+        <figcaption>Mi primer imagen con descripcion</figcaption>
+    </figure>
+    <hr>
+    <!-- Añadir un video con cierta dimension -->
+    <h1>VIDEOS</h1>
+    <video width="300" height="200" controls>
+        <source src="videos/recetaFacil.mp4" type="video/mp4">
+        Tu navegador no soporta etiquetas de video
+    </video>
+    <hr>
+    <h1>Audios</h1>
+    <!-- reproducir un audio definiendo el tipo de extension que tiene-->
+    <!-- Utiliza el control de audio por defecto del navegador -->
+    <audio controls> 
+        <source src="audios/sound.mp3" type="audio/mp3">
+    </audio>
+    <hr>
+    <h1>IFRAME</h1>
+    <!-- Añadir video desde youtube -->
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/0FvLasOf7Mo" title="Video de comida">
+    </iframe>
+</body>
+</html>

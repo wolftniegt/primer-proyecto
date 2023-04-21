@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas y Tablas</title>
+</head>
+
+<body>
+    <h1>Aprendiendo listas y tablas</h1>
+    <h2>Listas</h2>
+    <h3>Listas ordenadas</h3>
+    <p>Las listas ordenadas en HTML son aquellas que nos muestran los elementos de la lista en orden. Para representar
+        el orden tendremos los elementos numerados. Es decir, cada uno de los elementos irá precedido de un número o
+        letra que establezca su orden. Las listas ordenadas en HTML se representan mediante el elemento OL.</p>
+    <pre>
+        <code>
+            &lt;ol&gt; ... &lt;/ol&gt;
+        </code>
+    </pre>
+    <p>Cada uno de los elementos de la lista ordenada se representará mediante el elemento LI </p>
+    <pre>
+        <code>
+            <!-- &lt; es la representación de < -->
+            <!-- &gt; es la representación de > -->
+            &lt;ol&gt;
+                &lt;li&gt;Elemento 1&lt;li&gt;
+                &lt;li&gt;Elemento 2&lt;li&gt;
+                &lt;li&gt;Elemento 3&lt;li&gt;
+            &lt;/ol&gt;
+        </code>
+    </pre>
+    <h4>Ejemplos</h4>
+    <h5>Listado de elementos ordenados</h5>
+    <ol>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+    </ol>
+    <h5>Lista de cosas por hacer</h5>
+    <!-- start atributo para decir desde donde empieza la lista -->
+    <!-- type atributo para el tipo de numeracion -->
+    <!-- 1 - Listas decimales
+    a - Listas alfabéticas en minúsculas
+    A - Listas alfabéticas en mayúsculas
+    i - Listas de números romanos en minúsculas
+    I - Listas de números romanos en mayúsculas -->
+    <!-- Atributo para que la lista comience en reverso -->
+    <ol start="5" type="i" reversed>
+        <li>Mercado</li>
+        <li>Cuestionario curso</li>
+        <li>Solucion bugs proyecto</li>
+        <li>Lavar ropa</li>
+        <li>Estudiar HTML</li>
+    </ol>
+    <h3>Listas desordenadas</h3>
+    <p>Las listas desordenadas en HTML nos sirven para mostrar los elementos sin ningún tipo de orden, simplemente
+        precedidos por una viñeta que puede ser un punto, un cuadrado. Para definir una lista desordenada en HTML
+        utilizamos el elemento ul.</p>
+    <pre>
+        <code>
+            &lt;ul&gt; ... &lt;/ul&gt;
+        </code>
+    </pre>
+    <p>Cada uno de los elementos de la lista ordenada se representará mediante el elemento LI </p>
+    <pre>
+        <code>
+            <!-- &lt; es la representación de < -->
+            <!-- &gt; es la representación de > -->
+            &lt;ul&gt;
+                &lt;li&gt;Elemento 1&lt;li&gt;
+                &lt;li&gt;Elemento 2&lt;li&gt;
+                &lt;li&gt;Elemento 3&lt;li&gt;
+            &lt;/ul&gt;
+        </code>
+    </pre>
+    <h4>Ejemplo</h4>
+    <h5>Lista desordenada</h5>
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+    </ul>
+    <h5>Equipos de futbol</h5>
+    <!-- otro tipo es square -->
+    <ul type="circle">
+        <li>FC. Barcelona</li>
+        <li>Real Madrid</li>
+        <li>Real Betis</li>
+        <li>Atletico de Madrid</li>
+    </ul>
+    <h3>Listas de definiciones</h3>
+    <p>Las listas de definiciones en HTML nos sirven para montar listas en las que tenemos la estructura valor y
+        definición. Suelen ser listas para definir términos, como si fuese un diccionario, si bien pueden ser cualquier
+        par valor-definición. Las listas de definiciones en HTML se construyen mediante el elemento dl.</p>
+    <pre>
+        <code>
+            &lt;dl&gt; ... &lt;/dl&gt;
+        </code>
+    </pre>
+    <p>En este caso, dentro de las listas de definiciones en HTML tenemos dos elementos anidados: el que representa al
+        valor dt y el que representa a la definición dd. De esta forma la estructura de las listas en HTML de
+        definiciones es la siguiente:</p>
+    <pre>
+        <code>
+            <!-- &lt; es la representación de < -->
+            <!-- &gt; es la representación de > -->
+            &lt;dl&gt;
+                &lt;dt&gt;Termino 1&lt;dt&gt;
+                &lt;dd&gt;Definicion 1&lt;dd&gt;
+                &lt;dt&gt;Termino 2&lt;dt&gt;
+                &lt;dd&gt;Definicion 2&lt;dd&gt;
+            &lt;/dl&gt;
+        </code>
+    </pre>
+    <h4>Ejemplo</h4>
+    <h5>Lista de deficiones</h5>
+    <dl>
+        <dt>Tierra</dt>
+        <dd>La Tierra es un planeta que gira alrededor del Sol en la tercera órbita más interna.</dd>
+        <dt>Saturno</dt>
+        <dd>El sexto planeta más próximo al Sol, caracterizado por sus anillos visibles.</dd>
+        <dt>Luna</dt>
+        <dd>Es el único satélite natural de la Tierra</dd>
+    </dl>
+    <h2>Tablas</h2>
+    <p>Una tabla no es otra cosa más que un medio de organizar datos en filas y columnas.</p>
+    <h3>Ejemplo</h3>
+    <table border="solid">
+        <tr>
+            <td>Celda 1</td>
+            <td>Celda 2</td>
+            <td>Celda 3</td>
+        </tr>
+        <tr>
+            <td>Celda 4</td>
+            <td>Celda 5</td>
+            <td>Celda 6</td>
+        </tr>
+    </table>
+    <h3>Tablas con encabezados en columnas</h3>
+    <!-- Para encabezados se utiliza th -->
+    <table border="solid">
+        <tr>
+            <th>Hoy</th>
+            <th>Mañana</th>
+            <th>Viernes</th>
+        </tr>
+        <tr>
+            <td>Soleado</td>
+            <td>Mayormente soleado</td>
+            <td>Parcialmente nublado</td>
+        </tr>
+        <tr>
+            <td>19°C</td>
+            <td>17°C</td>
+            <td>12°C</td>
+        </tr>
+        <tr>
+            <td>E 13 km/h</td>
+            <td>E 11 km/h</td>
+            <td>S 16 km/h</td>
+        </tr>
+    </table>
+    <h3>Titulo con encabezados en filas</h3>
+    <!-- Para titulos en las columns se pone scope="row" -->
+    <p>El atributo scope provee un mecanismo para indicar explícitamente a qué celdas afecta una celda de encabezado. Este atributo solo puede ser declarado en una celda de encabezado y tomar los valores "col", "row", "colgroup" y "rowgroup". Los valores "col" y "row" indican que la celda de encabezado provee información para el resto de las celdas en la columna o fila (respectivamente) en que está presente.</p>
+    <table border="solid">
+        <tr>
+          <th scope="row">Día</th>
+          <th>Hoy</th>
+          <th>Mañana</th>
+          <th>Viernes</th>
+        </tr>
+        <tr>
+          <th>Condición</th>
+          <td>Soleado</td>
+          <td>Mayormente soleado</td>
+          <td>Parcialmente nublado</td>
+        </tr>
+        <tr>
+          <th>Temperatura</th>
+          <td>19°C</td>
+          <td>17°C</td>
+          <td>12°C</td>
+        </tr>
+        <tr>
+          <th>Vientos</th>
+          <td>E 13 km/h</td>
+          <td>E 11 km/h</td>
+          <td>S 16 km/h</td>
+        </tr>
+      </table>      
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+body {
+    display: grid;
+    background-image: url("https://w0.peakpx.com/wallpaper/435/281/HD-wallpaper-anime-black-clover-nacht-black-clover.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 1.0;
+    top: 0;
+    left: 0;
+    grid-template:
+        " header header" auto
+        " section article" auto
+        " footer article" auto/
+        auto 50vw
+    ;
+}
+
+html {
+    width: 100%;
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+    color: #fbff00;
+    border: 5px solid rgb(161, 20, 20);
+    border-color: #c40f0f9c;
+    margin: 5px;
+    padding: 20px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+
+.netflix {
+    background-color: rgb(172, 76, 76);
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+article {
+    grid-area: article;
+    
+}
+section {
+    grid-area: section;
+    margin: 100px;
+    border: 5px solid rgba(163, 16, 16, 0.527); ;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.Pelic {
+    background-color: #D9C148;
+    text-align: center;
+    margin: 10px;
+}
+
+.Black {
+    font-family: "Sofia";
+    color: #fdd405;
+    text-align: center;
+    border: 5px solid rgba(161, 20, 20);
+    border-radius: 50px 50px 30px 30px;
+    border-right: ridge;
+
+}
+
+.Black-Clover {
+    text-align: center;
+    color: #ffd503;
+}
+
+.clover {
+    background-color: #D9C148;
+    text-align: center;
+    margin: 100px;
+}
+
+.img {
+    width: 800px;
+    height: 300px;
+}
+.img2{
+    width: 500px;
+    height: 500px;
+    margin: 80px
+}
